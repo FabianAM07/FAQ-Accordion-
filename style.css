@@ -211,7 +211,7 @@ textarea, select{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 130vh;
+        min-height: 100vh;
     }
     .FAQ{
         background-color: hsl(0, 0%, 100%);
