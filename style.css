@@ -1,0 +1,362 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+img,
+picture{
+  max-width: 100%;
+  display: block;
+}
+input, button,
+textarea, select{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}
+.attribution{
+    font-family: "Work Sans", sans-serif;
+    background-color: hsl(292, 42%, 14%);
+    color: rgb(173, 73, 225);
+    font-size: 1rem; 
+    text-align: center;
+    padding: 1.5rem 0 ; 
+}
+.attribution a{
+    color: hsl(275, 100%, 97%);
+    text-decoration: none;
+    
+}
+.grayish-purple{
+    color: rgb(173, 73, 225)
+}
+.pointer{
+    cursor: pointer;
+}
+@media screen and (max-width: 576px){
+    
+    body{
+        background: url(assets/images/background-pattern-mobile.svg);
+        background-repeat: repeat-x;
+        background-position: top;
+        background-size: contain;
+        background-color: hsl(275, 100%, 97%);
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 130vh;
+    }
+    .FAQ{
+        background-color: hsl(0, 0%, 100%);
+        width: 20.5rem;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1), 0 0 100px 0 rgba(0, 0, 0, 0.19);
+        /* position: relative; */
+        margin: 5rem 0;
+    }
+    .FAQ-header{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    .FAQ-logo{
+        width: 1.5rem;
+    }
+    .FAQ-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: hsl(292, 42%, 14%);
+    }
+    .FAQ-item{
+        padding: 1.5rem 0
+    }
+    .acc-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .acc-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        word-break: keep-all;
+        width: 14rem;
+        font-size: 1rem;
+    }
+    .display-none{
+        display: none;
+    }
+    .info-text{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+        /* word-break: keep-all; */
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .FAQ-item:nth-child(2){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(3){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(4){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px){
+    body{
+        background: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: repeat-x;
+        background-position: top;
+        background-size: contain;
+        background-color: hsl(275, 100%, 97%);
+    }
+     .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .FAQ{
+        background-color: hsl(0, 0%, 100%);
+        width: 25rem;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1), 0 0 100px 0 rgba(0, 0, 0, 0.19);
+        /* position: relative; */
+        margin: 5rem 0;
+    }
+    .FAQ-header{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    .FAQ-logo{
+        width: 1.5rem;
+    }
+    .FAQ-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: hsl(292, 42%, 14%);
+    }
+    .FAQ-item{
+        padding: 1.5rem 0
+    }
+    .acc-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .acc-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        word-break: keep-all;
+        width: 15rem;
+        font-size: 1rem;
+    }
+    .display-none{
+        display: none;
+    }
+    .info-text{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+        word-break: keep-all;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+    .FAQ-item:nth-child(2){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(3){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(4){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .grayish-purple{
+        color: rgb(173, 73, 225)
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    
+    body{
+        background: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: repeat-x;
+        background-position: top;
+        background-size: contain;
+        background-color: hsl(275, 100%, 97%);
+    }
+     .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 130vh;
+    }
+    .FAQ{
+        background-color: hsl(0, 0%, 100%);
+        width: 32rem;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1), 0 0 100px 0 rgba(0, 0, 0, 0.19);
+        /* position: relative; */
+        margin: 5rem 0;
+    }
+    .FAQ-header{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    .FAQ-logo{
+        width: 2.5rem;
+    }
+    .FAQ-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        color: hsl(292, 42%, 14%);
+    }
+    .FAQ-item{
+        padding: 1.5rem 0
+    }
+    .acc-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .acc-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        word-break: keep-all;
+        /* width: 15rem; */
+        font-size: 1rem;
+    }
+    .display-none{
+        display: none;
+    }
+    .info-text{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+        word-break: keep-all;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+    .FAQ-item:nth-child(2){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(3){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(4){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .grayish-purple{
+        color: rgb(173, 73, 225)
+    }
+}
+@media screen and (min-width: 1440px) {
+
+    body{
+        background: url(assets/images/background-pattern-desktop.svg);
+        background-repeat: repeat-x;
+        background-position: top;
+        background-size: contain;
+        background-color: hsl(275, 100%, 97%);
+    }
+     .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 130vh;
+    }
+    .FAQ{
+        background-color: hsl(0, 0%, 100%);
+        width: 32rem;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1), 0 0 100px 0 rgba(0, 0, 0, 0.19);
+        /* position: relative; */
+        margin: 5rem 0;
+    }
+    .FAQ-header{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    .FAQ-logo{
+        width: 2.5rem;
+    }
+    .FAQ-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        color: hsl(292, 42%, 14%);
+    }
+    .FAQ-item{
+        padding: 1.5rem 0
+    }
+    .acc-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .acc-title{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 700;
+        color: hsl(292, 42%, 14%);
+        word-break: keep-all;
+        /* width: 15rem; */
+        font-size: 1rem;
+    }
+    .display-none{
+        display: none;
+    }
+    .info-text{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+        word-break: keep-all;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+    .FAQ-item:nth-child(2){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(3){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .FAQ-item:nth-child(4){
+        border-bottom: 1px solid hsl(292, 16%, 49%, 0.1);
+    }
+    .grayish-purple{
+        color: rgb(173, 73, 225)
+    }
+}
+
+
